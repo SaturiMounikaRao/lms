@@ -1,0 +1,21 @@
+pipeline{
+}
+    agent any
+    stages{
+        stages('test'){
+            steps{
+                echo "sonar analysis"
+            }
+        }
+        stage('build and release'){
+            steps{
+                echo "building"
+            }
+        }
+        stage('deploy'){
+        steps{
+            echo "deploying"
+    
+        }
+    }
+}
